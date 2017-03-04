@@ -15,6 +15,7 @@ public class Avatar extends Actor
     public void act() 
     {
         followMouse();
+        checkForCollisions();
     }    
     
     public void followMouse()
@@ -23,5 +24,20 @@ public class Avatar extends Actor
         if (mouse != null)  {
             this.setLocation(mouse.getX(), mouse.getY());
         }
+    }
+    
+    private void checkForCollisions()   
+    {
+        Actor enemy = this.getOneIntersectingObject(Enemy.class);
+        if (enemy != null)  {
+            this.getWorld().removeObject(this);
+            this.endGame();
+        }
+    }
+    
+    public void endGame()
+    {
+        AvoiderGameOverWorld gameOver = new AvoiderGameOverWorld();
+        Greenfoot.setWorld(gameOver);
     }
 }

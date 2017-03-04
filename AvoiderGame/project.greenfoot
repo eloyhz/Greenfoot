@@ -1,15 +1,20 @@
 #Greenfoot properties
-#Sat Mar 04 06:03:12 CST 2017
-class.AvoiderWorld.superclass=greenfoot.World
-mainWindow.width=850
-class.AvoiderWorld.image=space1.jpg
-class.Avatar.image=skull.png
+#Sat Mar 04 07:39:13 CST 2017
+class.Avatar.superclass=greenfoot.Actor
 project.charset=UTF-8
+mainWindow.height=600
 version=3.0.0
+class.AvoiderWorld.superclass=greenfoot.World
 class.Enemy.superclass=greenfoot.Actor
+class.AvoiderWorld.image=space1.jpg
+simulation.speed=49
 world.lastInstantiated=AvoiderWorld
+class.AvoiderGameOverWorld.superclass=greenfoot.World
 mainWindow.y=40
 mainWindow.x=40
+class.Avatar.image=skull.png
+class.AvoiderGameIntroScreen.superclass=greenfoot.World
+class.AvoiderGameIntroScreen.image=intro.png
 class.Enemy.image=smiley1.png
-class.Avatar.superclass=greenfoot.Actor
-mainWindow.height=600
+mainWindow.width=850
+class.AvoiderGameOverWorld.image=gameover.png
