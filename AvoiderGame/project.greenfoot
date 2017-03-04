@@ -1,0 +1,15 @@
+#Greenfoot properties
+#Sat Mar 04 06:03:12 CST 2017
+class.AvoiderWorld.superclass=greenfoot.World
+mainWindow.width=850
+class.AvoiderWorld.image=space1.jpg
+class.Avatar.image=skull.png
+project.charset=UTF-8
+version=3.0.0
+class.Enemy.superclass=greenfoot.Actor
+world.lastInstantiated=AvoiderWorld
+mainWindow.y=40
+mainWindow.x=40
+class.Enemy.image=smiley1.png
+class.Avatar.superclass=greenfoot.Actor
+mainWindow.height=600
