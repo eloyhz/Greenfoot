@@ -1,8 +1,6 @@
 1. Create the AvoiderGame scenario.
-
-2. Create the AvoiderWorld subclass from World (rename MyWorld class)
-
-3. Set the background image for the world, i.e. space1.jpg
+1. Create the AvoiderWorld subclass from World (rename MyWorld class)
+1. Set the background image for the world, i.e. space1.jpg
 
 4. Create the Avatar subclass from Actor and set the skull.png image from symbols
 
@@ -50,4 +48,5 @@ AvoiderWorld whenever the user make a click.
 
 21. Add audio file ufo.mp3 to sounds directory (source: http://djgubkafish.newgrounds.com)
 
-22. 
+22. Use the `playLoop()` in the constructor of AvoiderWorld and `stop()` before switch the world.
+

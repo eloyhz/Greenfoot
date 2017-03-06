@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class AvoiderWorld extends World
 {
+    private GreenfootSound music;
 
     /**
      * Constructor for objects of class MyWorld.
@@ -17,6 +18,8 @@ public class AvoiderWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
+        music = new GreenfootSound("ufo.mp3");
+        music.playLoop();
         prepare();
     }
 
@@ -29,6 +32,13 @@ public class AvoiderWorld extends World
             this.addObject(e, randx, -30);
         }
    }
+    
+    public void endGame()
+    {
+        music.stop();
+        AvoiderGameOverWorld gameOver = new AvoiderGameOverWorld();
+        Greenfoot.setWorld(gameOver);
+    }
     
     /**
      * Prepare the world for the start of the program.
