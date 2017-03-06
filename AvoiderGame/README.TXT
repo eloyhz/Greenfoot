@@ -48,4 +48,6 @@ AvoiderWorld whenever the user make a click.
 
 20. Create a new AvoiderGameIntroScreen world to set as the initial world.
 
+21. Add audio file ufo.mp3 to sounds directory (source: http://djgubkafish.newgrounds.com)
 
+22. 
